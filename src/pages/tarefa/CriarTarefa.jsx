@@ -105,9 +105,7 @@ const CriarTarefa = ({ handleClose, tarefas, setTarefas }) => {
                   aria-describedby="tarefa_inicio_helper_text"
                   value={inicioTarefa}
                   onChange={(e) => {
-                    setInicioTarefa(
-                      new Date(e.target.value).format("DD/MM/YYYY")
-                    );
+                    setInicioTarefa(e.target.value);
                   }}
                   sx={{
                     color: "rgba(0, 0, 0, 0.6)",
